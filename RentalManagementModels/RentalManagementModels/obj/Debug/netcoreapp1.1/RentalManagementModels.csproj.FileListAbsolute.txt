@@ -1,0 +1,5 @@
+C:\Users\mbeesley\source\repos\RentalManagementModels\RentalManagementModels\bin\Debug\netcoreapp1.1\RentalManagementModels.deps.json
+C:\Users\mbeesley\source\repos\RentalManagementModels\RentalManagementModels\bin\Debug\netcoreapp1.1\RentalManagementModels.dll
+C:\Users\mbeesley\source\repos\RentalManagementModels\RentalManagementModels\obj\Debug\netcoreapp1.1\RentalManagementModels.csprojResolveAssemblyReference.cache
+C:\Users\mbeesley\source\repos\RentalManagementModels\RentalManagementModels\obj\Debug\netcoreapp1.1\RentalManagementModels.csproj.CoreCompileInputs.cache
+C:\Users\mbeesley\source\repos\RentalManagementModels\RentalManagementModels\obj\Debug\netcoreapp1.1\RentalManagementModels.AssemblyInfo.cs
