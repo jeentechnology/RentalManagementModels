@@ -7089,7 +7089,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Michael Beesley\\.nuget\\packages\\": {}
+    "C:\\Users\\mbeesley\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -7100,11 +7100,11 @@
       "projectUniqueName": "C:\\github\\RentalManagementModels\\RentalManagementModels\\RentalManagementModels\\RentalManagementModels.csproj",
       "projectName": "RentalManagementModels",
       "projectPath": "C:\\github\\RentalManagementModels\\RentalManagementModels\\RentalManagementModels\\RentalManagementModels.csproj",
-      "packagesPath": "C:\\Users\\Michael Beesley\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\mbeesley\\.nuget\\packages\\",
       "outputPath": "C:\\github\\RentalManagementModels\\RentalManagementModels\\RentalManagementModels\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Michael Beesley\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mbeesley\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7112,6 +7112,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://jeentechnologynuget.azurewebsites.net/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentalManagementModels", "RentalManagementModels\RentalManagementModels.csproj", "{0FBDE2C9-960F-41EA-B8A0-D91DD5540E4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentalManagementModels", "RentalManagementModels\RentalManagementModels.csproj", "{0FBDE2C9-960F-41EA-B8A0-D91DD5540E4B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CDBA600E-E613-4FA3-B2C2-6EBC2F8500A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

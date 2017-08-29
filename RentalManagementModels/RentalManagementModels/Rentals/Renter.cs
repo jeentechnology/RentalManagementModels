@@ -15,7 +15,7 @@ namespace RentalManagementModels.Rentals
 
         public string SSN { get; set; }
 
-        public List<RenterInfo> RentalHistroy { get; set; }
+        public List<RenterInfo> RentalHistory { get; set; }
 
         public Uri PictureUrl { get; set; }
 

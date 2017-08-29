@@ -2,6 +2,21 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
+    <PackageId>JeenTechnology.RentalManagement.RentalManagementModels</PackageId>
+    <Authors>Michael Beesley</Authors>
+    <Company>JeenTechnology</Company>
+    <Product>RentalManagement</Product>
+    <Description>Models used for the rental management application services</Description>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl>https://github.com/jeentechnology/RentalManagementModels</RepositoryUrl>
+    <RepositoryType>Github</RepositoryType>
+    <PackageTags>models rental</PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp1.1\RentalManagementModels.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,0 +1,9 @@
+C:\github\RentalManagementModels\RentalManagementModels\RentalManagementModels\bin\Release\netcoreapp1.1\RentalManagementModels.deps.json
+C:\github\RentalManagementModels\RentalManagementModels\RentalManagementModels\bin\Release\netcoreapp1.1\RentalManagementModels.dll
+C:\github\RentalManagementModels\RentalManagementModels\RentalManagementModels\bin\Release\netcoreapp1.1\RentalManagementModels.pdb
+C:\github\RentalManagementModels\RentalManagementModels\RentalManagementModels\obj\Release\netcoreapp1.1\RentalManagementModels.csproj.CoreCompileInputs.cache
+C:\github\RentalManagementModels\RentalManagementModels\RentalManagementModels\obj\Release\netcoreapp1.1\RentalManagementModels.AssemblyInfo.cs
+C:\github\RentalManagementModels\RentalManagementModels\RentalManagementModels\obj\Release\netcoreapp1.1\RentalManagementModels.dll
+C:\github\RentalManagementModels\RentalManagementModels\RentalManagementModels\obj\Release\netcoreapp1.1\RentalManagementModels.pdb
+C:\github\RentalManagementModels\RentalManagementModels\RentalManagementModels\bin\Release\netcoreapp1.1\RentalManagementModels.xml
+C:\github\RentalManagementModels\RentalManagementModels\RentalManagementModels\obj\Release\netcoreapp1.1\RentalManagementModels.csprojResolveAssemblyReference.cache
