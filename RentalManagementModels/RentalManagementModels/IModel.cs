@@ -6,5 +6,6 @@ namespace RentalManagementModels
 {
     public interface IModel
     {
+        int Id { get; set; }
     }
 }

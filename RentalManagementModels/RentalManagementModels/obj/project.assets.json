@@ -7089,7 +7089,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mbeesley\\.nuget\\packages\\": {}
+    "C:\\Users\\Michael Beesley\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -7097,14 +7097,14 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\mbeesley\\source\\repos\\RentalManagementModels\\RentalManagementModels\\RentalManagementModels.csproj",
+      "projectUniqueName": "C:\\github\\RentalManagementModels\\RentalManagementModels\\RentalManagementModels\\RentalManagementModels.csproj",
       "projectName": "RentalManagementModels",
-      "projectPath": "C:\\Users\\mbeesley\\source\\repos\\RentalManagementModels\\RentalManagementModels\\RentalManagementModels.csproj",
-      "packagesPath": "C:\\Users\\mbeesley\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mbeesley\\source\\repos\\RentalManagementModels\\RentalManagementModels\\obj\\",
+      "projectPath": "C:\\github\\RentalManagementModels\\RentalManagementModels\\RentalManagementModels\\RentalManagementModels.csproj",
+      "packagesPath": "C:\\Users\\Michael Beesley\\.nuget\\packages\\",
+      "outputPath": "C:\\github\\RentalManagementModels\\RentalManagementModels\\RentalManagementModels\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mbeesley\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Michael Beesley\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

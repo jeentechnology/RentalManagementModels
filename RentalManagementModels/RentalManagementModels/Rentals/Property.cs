@@ -15,5 +15,7 @@ namespace RentalManagementModels.Rentals
         public Location PropertyLocation { get; set; }
 
         public Rental RentalStatus { get; set; }
+
+        public Uri PropertyImage { get; set; }
     }
 }

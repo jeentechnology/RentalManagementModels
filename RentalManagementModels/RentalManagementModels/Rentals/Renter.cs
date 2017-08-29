@@ -17,5 +17,7 @@ namespace RentalManagementModels.Rentals
 
         public List<RenterInfo> RentalHistroy { get; set; }
 
+        public Uri PictureUrl { get; set; }
+
     }
 }
