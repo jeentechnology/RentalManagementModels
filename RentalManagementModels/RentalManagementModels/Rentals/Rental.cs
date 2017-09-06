@@ -6,7 +6,6 @@ namespace RentalManagementModels.Rentals
 {
     public struct Rental
     {
-
         public bool isRented { get; set; }
 
         public DateTime RentalStartDate { get; set; }

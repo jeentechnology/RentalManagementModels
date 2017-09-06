@@ -1,19 +1,104 @@
-﻿using System;
+﻿using RentalManagementModels.Utility;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace RentalManagementModels.Rentals
 {
-    public class Response : IModel
+    public class Response : ModelBase
     {
-        public int Id { get; set; }
 
-        public DateTime ResponseDateTimeStamp { get; set; }
+        /// <summary>
+        /// CTOR telling the model if it is a new instance or an existing hydrated instance
+        /// </summary>
+        public Response(bool isNew)
+        {
+            SetupModel(isNew);
+        }
 
-        public string ResponseValue { get; set; }
+        #region ResponseDateTimeStamp
+        private DateTime _ResponseDateTimeStamp;
 
-        public int QuestionId { get; set; }
+        public DateTime ResponseDateTimeStamp
+        {
+            get
+            {
+                return _ResponseDateTimeStamp;
+            }
+            set
+            {
+                if (value != _ResponseDateTimeStamp)
+                {
+                    PropertyChanged();
+                    _ResponseDateTimeStamp = value;
+                }
+            }
+        }
 
-        public int ScaleId { get; set; }
+        #endregion // ResponseDateTimeStamp
+
+        #region ResposneValue
+        private string _ResposneValue;
+
+        public string ResposneValue
+        {
+            get
+            {
+                return _ResposneValue;
+            }
+            set
+            {
+                if (value != _ResposneValue)
+                {
+                    PropertyChanged();
+                    _ResposneValue = value;
+                }
+            }
+        }
+
+        #endregion // ResposneValue
+
+        #region QuestionId
+        private int _QuestionId;
+
+        public int QuestionId
+        {
+            get
+            {
+                return _QuestionId;
+            }
+            set
+            {
+                if (value != _QuestionId)
+                {
+                    PropertyChanged();
+                    _QuestionId = value;
+                }
+            }
+        }
+
+        #endregion // QuestionId
+
+        #region ScaleId
+        private int _ScaleId;
+
+        public int ScaleId
+        {
+            get
+            {
+                return _ScaleId;
+            }
+            set
+            {
+                if (value != _ScaleId)
+                {
+                    PropertyChanged();
+                    _ScaleId = value;
+                }
+            }
+        }
+
+        #endregion // ScaleId
+
     }
 }
