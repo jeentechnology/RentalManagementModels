@@ -4,5 +4,678 @@
         <name>RentalManagementModels</name>
     </assembly>
     <members>
+        <member name="T:RentalManagementModels.IModel">
+            <summary>
+            an interface representation of a model object
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.IModel.Id">
+            <summary>
+            The Id that will be used to reference the object in a datastore
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.IModel.State">
+            <summary>
+            The current state of the model
+            </summary>
+        </member>
+        <member name="T:RentalManagementModels.Rentals.Location">
+            <summary>
+            An object representation of a physical location somewhere in the United States
+            </summary>
+        </member>
+        <member name="M:RentalManagementModels.Rentals.Location.#ctor(System.Boolean)">
+            <summary>
+            CTOR telling the model if it is a new instance or an existing hydrated instance
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.Location.Address1">
+            <summary>
+            the first line of the locations address
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.Location.Address2">
+            <summary>
+            the second line of the locations address
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.Location.City">
+            <summary>
+            the city of the location
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.Location.LocationState">
+            <summary>
+            the state in the us of the location
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.Location.ZipCode">
+            <summary>
+            the zip code of the location
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.Location.Lattitude">
+            <summary>
+            the lattitude of the location
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.Location.Longitude">
+            <summary>
+            the longitude of the location
+            </summary>
+        </member>
+        <member name="T:RentalManagementModels.Rentals.Property">
+            <summary>
+            an object representation of a rental property
+            </summary>
+        </member>
+        <member name="M:RentalManagementModels.Rentals.Property.#ctor(System.Boolean)">
+            <summary>
+            CTOR telling the model if it is a new instance or an existing hydrated instance
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.Property.Name">
+            <summary>
+            the name of the property
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.Property.Description">
+            <summary>
+            a description of the property
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.Property.PropertyLocation">
+            <summary>
+            the location of this property
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.Property.PropertyImage">
+            <summary>
+            an image of the property
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.Property.IsRented">
+            <summary>
+            whether or not the property is currently rented
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.Property.RentalStartDate">
+            <summary>
+            the start date of the current rental
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.Property.RentalEndDate">
+            <summary>
+            the projectd end date of the current rental
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.Property.Renters">
+            <summary>
+            a list of people currently renting the property
+            </summary>
+        </member>
+        <member name="T:RentalManagementModels.Rentals.PropertyEvaluation">
+            <summary>
+            an object representation of a property evalation performed by a property manager
+            </summary>
+        </member>
+        <member name="M:RentalManagementModels.Rentals.PropertyEvaluation.#ctor(System.Boolean)">
+            <summary>
+            CTOR telling the model if it is a new instance or an existing hydrated instance
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.PropertyEvaluation.AllResponses">
+            <summary>
+            a list of the responses to the evaluation of this property
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.PropertyEvaluation.EvaluationStarted">
+            <summary>
+            the date and time that the property evalutation was started
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.PropertyEvaluation.EvaluationEnded">
+            <summary>
+            the date and time that the property evaluation ended
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.PropertyEvaluation.PropertyEvaluated">
+            <summary>
+            the location of the property that was evaluated
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.PropertyEvaluation.EvaluationUserId">
+            <summary>
+            the user who performed the evaluation of this property
+            </summary>
+        </member>
+        <member name="T:RentalManagementModels.Rentals.Renter">
+            <summary>
+            an object representation of a person renting a property.
+            </summary>
+        </member>
+        <member name="M:RentalManagementModels.Rentals.Renter.#ctor(System.Boolean)">
+            <summary>
+            CTOR telling the model if it is a new instance or an existing hydrated instance
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.Renter.FirstName">
+            <summary>
+            The first name of the renter
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.Renter.LastName">
+            <summary>
+            the last name of the renter
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.Renter.SSN">
+            <summary>
+            the social security number of the renter
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.Renter.RentalHistory">
+            <summary>
+            a list of history about this renter
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.Renter.RenterImage">
+            <summary>
+            a picture of the renter
+            </summary>
+        </member>
+        <member name="T:RentalManagementModels.Rentals.Renter.RenterInfoType">
+            <summary>
+            Different types of rental history
+            Issue
+            GeneralInfo
+            Kudos
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Rentals.Renter.RenterInfoType.Issue">
+            <summary>
+            Denotes an issue that occured with a renter.
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Rentals.Renter.RenterInfoType.GeneralInfo">
+            <summary>
+            Denotes general information about a renter.
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Rentals.Renter.RenterInfoType.Kudos">
+            <summary>
+            Denotes a positve experience with a renter.
+            </summary>
+        </member>
+        <member name="T:RentalManagementModels.Rentals.Response">
+            <summary>
+            an object representation of an individual response to a property evaluation
+            </summary>
+        </member>
+        <member name="M:RentalManagementModels.Rentals.Response.#ctor(System.Boolean)">
+            <summary>
+            CTOR telling the model if it is a new instance or an existing hydrated instance
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.Response.ResponseDateTimeStamp">
+            <summary>
+            the date and time that this response was collected
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.Response.ResposneValue">
+            <summary>
+            the value that was selected for the question that was asked
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.Response.QuestionId">
+            <summary>
+            the question that corresponded to this response
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Rentals.Response.ScaleId">
+            <summary>
+            the scale that corresponds to this repsonse
+            </summary>
+        </member>
+        <member name="T:RentalManagementModels.Users.RentalUser">
+            <summary>
+            represents a user of the rental managment system.
+            </summary>
+        </member>
+        <member name="M:RentalManagementModels.Users.RentalUser.#ctor(System.Boolean)">
+            <summary>
+            CTOR telling the model if it is a new instance or an existing hydrated instance
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Users.RentalUser.FirstName">
+            <summary>
+            the users first name
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Users.RentalUser.LastName">
+            <summary>
+            the users last name
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Users.RentalUser.Email">
+            <summary>
+            the users email address
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Users.RentalUser.Role">
+            <summary>
+            the role that the user has within the rental management ecosystem
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Users.RentalUser.UserAttributes">
+            <summary>
+            a collection of attributes secific to the user
+            </summary>
+        </member>
+        <member name="T:RentalManagementModels.Users.RentalUser.UserRole">
+            <summary>
+            The different roles that are available to users
+            Admin
+            Owner
+            PropertyManager
+            Renter
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Users.RentalUser.UserRole.Admin">
+            <summary>
+            an admin user who can 
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Users.RentalUser.UserRole.Owner">
+            <summary>
+            a property owner who can see all aspects of a certain property
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Users.RentalUser.UserRole.PropertyManager">
+            <summary>
+            a user designated to mangae a specific property
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Users.RentalUser.UserRole.Renter">
+            <summary>
+            A user who is renting a property
+            </summary>
+        </member>
+        <member name="T:RentalManagementModels.Utility.ModelBase">
+            <summary>
+            represents the base class for an implementation of a model using IModel
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Utility.ModelBase.Id">
+            <summary>
+            The Id that identifies the model in a data store
+            </summary>
+        </member>
+        <member name="P:RentalManagementModels.Utility.ModelBase.State">
+            <summary>
+            The current state of the model
+            </summary>
+        </member>
+        <member name="M:RentalManagementModels.Utility.ModelBase.PropertyChanged">
+            <summary>
+            Called by a property when the status is changed
+            </summary>
+        </member>
+        <member name="M:RentalManagementModels.Utility.ModelBase.SetupModel(System.Boolean)">
+            <summary>
+            Called by a child ctor for the initial setup of the model
+            </summary>
+        </member>
+        <member name="M:RentalManagementModels.Utility.ModelBase.ResetState(System.Boolean)">
+            <summary>
+            Reset the state of the model typically used after hydrating or deserializing
+            </summary>
+            <param name="isNew"></param>
+        </member>
+        <member name="M:RentalManagementModels.Utility.ModelBase.Delete">
+            <summary>
+            Sets the state to deleted and updates the restore state in case the delete needs to be undone.
+            </summary>
+        </member>
+        <member name="M:RentalManagementModels.Utility.ModelBase.Restore">
+            <summary>
+            Restores a deleted model to what it was when it was deleted.
+            </summary>
+        </member>
+        <member name="T:RentalManagementModels.Utility.ModelStates">
+            <summary>
+            Represents the different states a model can have
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.ModelStates.NoChange">
+            <summary>
+            There have been no changes since the item was last saved.
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.ModelStates.New">
+            <summary>
+            The item is a new model that has not been persisted to a data store
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.ModelStates.Updated">
+            <summary>
+            the item has been changed since its last save
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.ModelStates.Deleted">
+            <summary>
+            The item has been delted but not removed from the data store
+            </summary>
+        </member>
+        <member name="T:RentalManagementModels.Utility.USState">
+            <summary>
+            Represents all of the states in the US
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.AL">
+            <summary>
+            AL
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.AK">
+            <summary>
+            AK
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.AR">
+            <summary>
+            AR
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.AZ">
+            <summary>
+            AZ
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.CA">
+            <summary>
+            CA
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.CO">
+            <summary>
+            CO
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.CT">
+            <summary>
+            CT
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.DC">
+            <summary>
+            DC
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.DE">
+            <summary>
+            DE
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.FL">
+            <summary>
+            FL
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.GA">
+            <summary>
+            GA
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.HI">
+            <summary>
+            HI
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.IA">
+            <summary>
+            IA
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.ID">
+            <summary>
+            ID
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.IL">
+            <summary>
+            IL
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.IN">
+            <summary>
+            IN
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.KS">
+            <summary>
+            KS
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.KY">
+            <summary>
+            KY
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.LA">
+            <summary>
+            LA
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.MA">
+            <summary>
+            MA
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.MD">
+            <summary>
+            MD
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.ME">
+            <summary>
+            ME
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.MI">
+            <summary>
+            MI
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.MN">
+            <summary>
+            MN
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.MO">
+            <summary>
+            MO
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.MS">
+            <summary>
+            MS
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.MT">
+            <summary>MT
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.NC">
+            <summary>
+            NC
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.ND">
+            <summary>
+            ND
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.NE">
+            <summary>
+            NE
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.NH">
+            <summary>
+            NH
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.NJ">
+            <summary>
+            NJ
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.NM">
+            <summary>
+            NM
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.NV">
+            <summary>
+            NV
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.NY">
+            <summary>
+            NY
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.OK">
+            <summary>
+            OK
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.OH">
+            <summary>
+            OH
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.OR">
+            <summary>
+            OR
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.PA">
+            <summary>
+            PA
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.RI">
+            <summary>
+            RI
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.SC">
+            <summary>
+            SC
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.SD">
+            <summary>
+            SD
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.TN">
+            <summary>
+            TN
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.TX">
+            <summary>
+            TX
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.UT">
+            <summary>
+            UT
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.VA">
+            <summary>
+            VA
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.VT">
+            <summary>
+            VT
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.WA">
+            <summary>
+            WA
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.WI">
+            <summary>
+            WI
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.WV">
+            <summary>
+            WV
+            State in the US check description for state name
+            </summary>
+        </member>
+        <member name="F:RentalManagementModels.Utility.USState.WY">
+            <summary>
+            WY
+            State in the US check description for state name
+            </summary>
+        </member>
     </members>
 </doc>

@@ -4,10 +4,19 @@ using System.Text;
 
 namespace RentalManagementModels.Utility
 {
+    /// <summary>
+    /// represents the base class for an implementation of a model using IModel
+    /// </summary>
     public abstract class ModelBase : IModel
     {
+        /// <summary>
+        /// The Id that identifies the model in a data store
+        /// </summary>
         public string Id { get; set; }
 
+        /// <summary>
+        /// The current state of the model
+        /// </summary>
         public ModelStates State { get; private set; }
 
         private ModelStates restoreState;

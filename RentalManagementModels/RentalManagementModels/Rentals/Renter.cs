@@ -5,6 +5,9 @@ using System.Text;
 
 namespace RentalManagementModels.Rentals
 {
+    /// <summary>
+    /// an object representation of a person renting a property.
+    /// </summary>
     public class Renter : ModelBase
     {
 
@@ -13,14 +16,16 @@ namespace RentalManagementModels.Rentals
         /// </summary>
         public Renter(bool isNew)
         {
-            RentalHistory = new List<RenterInfo>();
+            RentalHistory = new List<KeyValuePair<RenterInfoType, string>>();
             SetupModel(isNew);
         }
 
-
-        #region FirstName
+        #region FirstName - The first name of the renter
         private string _FirstName;
 
+        /// <summary>
+        /// The first name of the renter
+        /// </summary>
         public string FirstName
         {
             get
@@ -39,9 +44,12 @@ namespace RentalManagementModels.Rentals
 
         #endregion // FirstName
 
-        #region LastName
+        #region LastName - the last name of the renter
         private string _LastName;
 
+        /// <summary>
+        /// the last name of the renter
+        /// </summary>
         public string LastName
         {
             get
@@ -60,9 +68,12 @@ namespace RentalManagementModels.Rentals
 
         #endregion // LastName
 
-        #region SSN
+        #region SSN - the social security number of the renter
         private string _SSN;
 
+        /// <summary>
+        /// the social security number of the renter
+        /// </summary>
         public string SSN
         {
             get
@@ -81,10 +92,13 @@ namespace RentalManagementModels.Rentals
 
         #endregion // SSN
 
-        #region RentalHistory
-        private List<RenterInfo> _RentalHistory;
+        #region RentalHistory - a list of history about this renter
+        private List<KeyValuePair<RenterInfoType, string>> _RentalHistory;
 
-        public List<RenterInfo> RentalHistory
+        /// <summary>
+        /// a list of history about this renter
+        /// </summary>
+        public List<KeyValuePair<RenterInfoType, string>> RentalHistory
         {
             get
             {
@@ -102,26 +116,53 @@ namespace RentalManagementModels.Rentals
 
         #endregion // RentalHistory
 
-        #region PictureUrl
-        private Uri _PictureUrl;
+        #region RenterImage - a picture of the renter
+        private Uri _RenterImage;
 
-        public Uri PictureUrl
+        /// <summary>
+        /// a picture of the renter
+        /// </summary>
+        public Uri RenterImage
         {
             get
             {
-                return _PictureUrl;
+                return _RenterImage;
             }
             set
             {
-                if (value != _PictureUrl)
+                if (value != _RenterImage)
                 {
                     PropertyChanged();
-                    _PictureUrl = value;
+                    _RenterImage = value;
                 }
             }
         }
 
-        #endregion // PictureUrl
+        #endregion // RenterImage
+
+        /// <summary>
+        /// Different types of rental history
+        /// Issue
+        /// GeneralInfo
+        /// Kudos
+        /// </summary>
+        public enum RenterInfoType
+        {
+            /// <summary>
+            /// Denotes an issue that occured with a renter.
+            /// </summary>
+            Issue,
+
+            /// <summary>
+            /// Denotes general information about a renter.
+            /// </summary>
+            GeneralInfo,
+
+            /// <summary>
+            /// Denotes a positve experience with a renter.
+            /// </summary>
+            Kudos
+        }
 
     }
 }

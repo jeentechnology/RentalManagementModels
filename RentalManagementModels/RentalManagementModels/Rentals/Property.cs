@@ -5,6 +5,9 @@ using System.Text;
 
 namespace RentalManagementModels.Rentals
 {
+    /// <summary>
+    /// an object representation of a rental property
+    /// </summary>
     public class Property : ModelBase
     {
 
@@ -13,13 +16,16 @@ namespace RentalManagementModels.Rentals
         /// </summary>
         public Property(bool isNew)
         {
+            _Renters = new List<Renter>();
             SetupModel(isNew);
         }
 
-
-        #region Name
+        #region Name - the name of the property
         private string _Name;
 
+        /// <summary>
+        /// the name of the property
+        /// </summary>
         public string Name
         {
             get
@@ -38,10 +44,12 @@ namespace RentalManagementModels.Rentals
 
         #endregion // Name
 
-
-        #region Description
+        #region Description - a description of the property
         private string _Description;
 
+        /// <summary>
+        /// a description of the property
+        /// </summary>
         public string Description
         {
             get
@@ -60,10 +68,12 @@ namespace RentalManagementModels.Rentals
 
         #endregion // Description
 
-
-        #region PropertyLocation
+        #region PropertyLocation - the location of this property
         private Location _PropertyLocation;
 
+        /// <summary>
+        /// the location of this property
+        /// </summary>
         public Location PropertyLocation
         {
             get
@@ -81,33 +91,13 @@ namespace RentalManagementModels.Rentals
         }
 
         #endregion // PropertyLocation
-
-
-        #region RentalStatus
-        private Rental _RentalStatus;
-
-        public Rental RentalStatus
-        {
-            get
-            {
-                return _RentalStatus;
-            }
-            set
-            {
-                if (value != _RentalStatus)
-                {
-                    PropertyChanged();
-                    _RentalStatus = value;
-                }
-            }
-        }
-
-        #endregion // RentalStatus
-
-
-        #region PropertyImage
+        
+        #region PropertyImage - an image of the property
         private Uri _PropertyImage;
 
+        /// <summary>
+        /// an image of the property
+        /// </summary>
         public Uri PropertyImage
         {
             get
@@ -125,6 +115,102 @@ namespace RentalManagementModels.Rentals
         }
 
         #endregion // PropertyImage
+
+        #region IsRented - whether or not the property is currently rented
+        private bool _IsRented;
+
+        /// <summary>
+        /// whether or not the property is currently rented
+        /// </summary>
+        public bool IsRented
+        {
+            get
+            {
+                return _IsRented;
+            }
+            set
+            {
+                if (value != _IsRented)
+                {
+                    PropertyChanged();
+                    _IsRented = value;
+                }
+            }
+        }
+
+        #endregion // IsRented
+
+        #region RentalStartDate - the start date of the current rental
+        private DateTime? _RentalStartDate;
+
+        /// <summary>
+        /// the start date of the current rental
+        /// </summary>
+        public DateTime? RentalStartDate
+        {
+            get
+            {
+                return _RentalStartDate;
+            }
+            set
+            {
+                if (value != _RentalStartDate)
+                {
+                    PropertyChanged();
+                    _RentalStartDate = value;
+                }
+            }
+        }
+
+        #endregion // RentalStartDate
+
+        #region RentalEndDate - the projectd end date of the current rental
+        private DateTime? _RentalEndDate;
+
+        /// <summary>
+        /// the projectd end date of the current rental
+        /// </summary>
+        public DateTime? RentalEndDate
+        {
+            get
+            {
+                return _RentalEndDate;
+            }
+            set
+            {
+                if (value != _RentalEndDate)
+                {
+                    PropertyChanged();
+                    _RentalEndDate = value;
+                }
+            }
+        }
+
+        #endregion // RentalEndDate
+
+        #region Renters - a list of people currently renting the property
+        private List<Renter> _Renters;
+
+        /// <summary>
+        /// a list of people currently renting the property
+        /// </summary>
+        public List<Renter> Renters
+        {
+            get
+            {
+                return _Renters;
+            }
+            set
+            {
+                if (value != _Renters)
+                {
+                    PropertyChanged();
+                    _Renters = value;
+                }
+            }
+        }
+
+        #endregion // Renters
 
     }
 }

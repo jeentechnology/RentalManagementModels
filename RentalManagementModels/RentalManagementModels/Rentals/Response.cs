@@ -5,6 +5,9 @@ using System.Text;
 
 namespace RentalManagementModels.Rentals
 {
+    /// <summary>
+    /// an object representation of an individual response to a property evaluation
+    /// </summary>
     public class Response : ModelBase
     {
 
@@ -16,9 +19,12 @@ namespace RentalManagementModels.Rentals
             SetupModel(isNew);
         }
 
-        #region ResponseDateTimeStamp
+        #region ResponseDateTimeStamp - the date and time that this response was collected
         private DateTime _ResponseDateTimeStamp;
 
+        /// <summary>
+        /// the date and time that this response was collected
+        /// </summary>
         public DateTime ResponseDateTimeStamp
         {
             get
@@ -37,9 +43,12 @@ namespace RentalManagementModels.Rentals
 
         #endregion // ResponseDateTimeStamp
 
-        #region ResposneValue
+        #region ResposneValue - the value that was selected for the question that was asked
         private string _ResposneValue;
 
+        /// <summary>
+        /// the value that was selected for the question that was asked
+        /// </summary>
         public string ResposneValue
         {
             get
@@ -58,10 +67,13 @@ namespace RentalManagementModels.Rentals
 
         #endregion // ResposneValue
 
-        #region QuestionId
-        private int _QuestionId;
+        #region QuestionId - the question that corresponded to this response
+        private string _QuestionId;
 
-        public int QuestionId
+        /// <summary>
+        /// the question that corresponded to this response
+        /// </summary>
+        public string QuestionId
         {
             get
             {
@@ -79,10 +91,13 @@ namespace RentalManagementModels.Rentals
 
         #endregion // QuestionId
 
-        #region ScaleId
-        private int _ScaleId;
+        #region ScaleId - the scale that corresponds to this repsonse
+        private string _ScaleId;
 
-        public int ScaleId
+        /// <summary>
+        /// the scale that corresponds to this repsonse
+        /// </summary>
+        public string ScaleId
         {
             get
             {

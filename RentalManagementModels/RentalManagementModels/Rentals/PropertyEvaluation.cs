@@ -5,6 +5,9 @@ using System.Text;
 
 namespace RentalManagementModels.Rentals
 {
+    /// <summary>
+    /// an object representation of a property evalation performed by a property manager
+    /// </summary>
     public class PropertyEvaluation : ModelBase
     {
 
@@ -17,10 +20,12 @@ namespace RentalManagementModels.Rentals
             SetupModel(isNew);
         }
 
-
-        #region AllResponses
+        #region AllResponses - a list of the responses to the evaluation of this property
         private List<Response> _AllResponses;
 
+        /// <summary>
+        /// a list of the responses to the evaluation of this property
+        /// </summary>
         public List<Response> AllResponses
         {
             get
@@ -39,10 +44,12 @@ namespace RentalManagementModels.Rentals
 
         #endregion // AllResponses
 
-
-        #region EvaluationStarted
+        #region EvaluationStarted - the date and time that the property evalutation was started
         private DateTime _EvaluationStarted;
 
+        /// <summary>
+        /// the date and time that the property evalutation was started
+        /// </summary>
         public DateTime EvaluationStarted
         {
             get
@@ -61,10 +68,12 @@ namespace RentalManagementModels.Rentals
 
         #endregion // EvaluationStarted
 
-
-        #region EvaluationEnded
+        #region EvaluationEnded - the date and time that the property evaluation ended
         private DateTime _EvaluationEnded;
 
+        /// <summary>
+        /// the date and time that the property evaluation ended
+        /// </summary>
         public DateTime EvaluationEnded
         {
             get
@@ -83,10 +92,12 @@ namespace RentalManagementModels.Rentals
 
         #endregion // EvaluationEnded
 
-
-        #region PropertyEvaluated
+        #region PropertyEvaluated - the location of the property that was evaluated
         private Location _PropertyEvaluated;
 
+        /// <summary>
+        /// the location of the property that was evaluated
+        /// </summary>
         public Location PropertyEvaluated
         {
             get
@@ -105,11 +116,13 @@ namespace RentalManagementModels.Rentals
 
         #endregion // PropertyEvaluated
 
-        
-        #region EvaluationUserId
-        private int _EvaluationUserId;
+        #region EvaluationUserId - the user who performed the evaluation of this property
+        private string _EvaluationUserId;
 
-        public int EvaluationUserId
+        /// <summary>
+        /// the user who performed the evaluation of this property
+        /// </summary>
+        public string EvaluationUserId
         {
             get
             {

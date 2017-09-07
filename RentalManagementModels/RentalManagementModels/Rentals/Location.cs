@@ -5,6 +5,9 @@ using RentalManagementModels.Utility;
 
 namespace RentalManagementModels.Rentals
 {
+    /// <summary>
+    /// An object representation of a physical location somewhere in the United States
+    /// </summary>
     public class Location : ModelBase
     {
 
@@ -16,10 +19,12 @@ namespace RentalManagementModels.Rentals
             SetupModel(isNew);
         }
 
-
-        #region Address1
+        #region Address1 - the first line of the locations address
         private string _Address1;
 
+        /// <summary>
+        /// the first line of the locations address
+        /// </summary>
         public string Address1
         {
             get
@@ -38,10 +43,12 @@ namespace RentalManagementModels.Rentals
 
         #endregion // Address1
 
-
-        #region Address2
+        #region Address2 - the second line of the locations address
         private string _Address2;
 
+        /// <summary>
+        /// the second line of the locations address
+        /// </summary>
         public string Address2
         {
             get
@@ -60,10 +67,12 @@ namespace RentalManagementModels.Rentals
 
         #endregion // Address2
 
-
-        #region City
+        #region City - the city of the location
         private string _City;
 
+        /// <summary>
+        /// the city of the location
+        /// </summary>
         public string City
         {
             get
@@ -82,32 +91,36 @@ namespace RentalManagementModels.Rentals
 
         #endregion // City
 
+        #region LocationState - the state in the us of the location
+        private USState _LocationState;
 
-        #region State
-        private State _State;
-
-        public State State
+        /// <summary>
+        /// the state in the us of the location
+        /// </summary>
+        public USState LocationState
         {
             get
             {
-                return _State;
+                return _LocationState;
             }
             set
             {
-                if (value != _State)
+                if (value != _LocationState)
                 {
                     PropertyChanged();
-                    _State = value;
+                    _LocationState = value;
                 }
             }
         }
 
-        #endregion // State
+        #endregion // LocationState
 
-
-        #region ZipCode
+        #region ZipCode - the zip code of the location
         private string _ZipCode;
 
+        /// <summary>
+        /// the zip code of the location
+        /// </summary>
         public string ZipCode
         {
             get
@@ -126,49 +139,53 @@ namespace RentalManagementModels.Rentals
 
         #endregion // ZipCode
 
+        #region Lattitude - the lattitude of the location
+        private decimal _Lattitude;
 
-        #region Lat
-        private decimal _Lat;
-
-        public decimal Lat
+        /// <summary>
+        /// the lattitude of the location
+        /// </summary>
+        public decimal Lattitude
         {
             get
             {
-                return _Lat;
+                return _Lattitude;
             }
             set
             {
-                if (value != _Lat)
+                if (value != _Lattitude)
                 {
                     PropertyChanged();
-                    _Lat = value;
+                    _Lattitude = value;
                 }
             }
         }
 
-        #endregion // Lat
+        #endregion // Lattitude
 
+        #region Longitude - the longitude of the location
+        private decimal _Longitude;
 
-        #region Long
-        private decimal _Long;
-
-        public decimal Long
+        /// <summary>
+        /// the longitude of the location
+        /// </summary>
+        public decimal Longitude
         {
             get
             {
-                return _Long;
+                return _Longitude;
             }
             set
             {
-                if (value != _Long)
+                if (value != _Longitude)
                 {
                     PropertyChanged();
-                    _Long = value;
+                    _Longitude = value;
                 }
             }
         }
 
-        #endregion // Long
+        #endregion // Longitude
 
     }
 }

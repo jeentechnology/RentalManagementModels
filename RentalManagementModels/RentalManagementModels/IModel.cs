@@ -5,6 +5,9 @@ using System.Text;
 
 namespace RentalManagementModels
 {
+    /// <summary>
+    /// an interface representation of a model object
+    /// </summary>
     public interface IModel
     {
         /// <summary>
